@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DoNote</string>
+    <string name="your_note_content">your note contents</string>
+</resources>

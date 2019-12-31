@@ -6,8 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.mix.donote.model.Blog
 
-class CategAdapter(val categList: List<Country>?) : RecyclerView.Adapter<CategAdapter.ViewHolder>() {
+class CategAdapter(val categList: List<Blog>?) : RecyclerView.Adapter<CategAdapter.ViewHolder>() {
 
 
     override fun getItemCount() = categList!!.size
@@ -31,8 +32,8 @@ class CategAdapter(val categList: List<Country>?) : RecyclerView.Adapter<CategAd
 
         val mCateg = categList!!.get(position)
 
-        if (mCateg.name != null) {
-            holder.tvDes.setText(mCateg.name)
+        if (mCateg.title != null) {
+            holder.tvDes.setText(mCateg.title)
         }
     }
 
